@@ -5,3 +5,8 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+puts "Init the topic db"
+
+for i in 1..10 do
+  Topic.create!([title: "Topic #{i}", description: "Default Topic #{i}"])
+end
